@@ -1,7 +1,30 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* base */
+body, *, html {
     padding: 0;
     margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+.container {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  /* Optional: Customize the max-width for different screen sizes */
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  /* You can add more breakpoints as needed */
+}
+/* hero */
 .bg {
     background-image: url('/src/images/background.svg');
     background-position: top;
@@ -12,3 +35,34 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+/* input */
+input {
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+input:focus {
+  outline: none;
+}
+
+.backdrop-blur-md {
+    backdrop-filter: blur(16px);
+}
+/* nav */
+nav {
+    color: white;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+}
+li {
+  list-style-type: none;
+}
+
