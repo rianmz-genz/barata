@@ -4,26 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Batara</title>
+    <title>Barata</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <section id="hero" class="bg hero">
-        <nav>
-            <div class="container d-flex justify-content-between align-items-center py-4 backdrop-blur-md">
-                <p class="p-0 m-0 fs-5 fw-bold">BARATA</p>
-                <ul class="d-flex justify-content-center align-items-center gap-3 p-0 m-0">
-                    <li>Hero</li>
-                    <li>Pengertian</li>
-                    <li>Jenis - jenis</li>
-                </ul>
-                <div class="d-flex align-items-center gap-2 ">
-                    <img src="src/images/search.svg" />
-                    <input type="search" name="search" id="search" placeholder="Cari">
-                </div>
+    <!-- navbar -->
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center py-4 backdrop-blur-md">
+            <p class="p-0 m-0 fs-5 fw-bold">BARATA</p>
+            <ul class="d-flex justify-content-center align-items-center gap-3 p-0 m-0">
+                <li>Hero</li>
+                <li>Pengertian</li>
+                <li>Jenis - jenis</li>
+            </ul>
+            <div class="d-flex align-items-center gap-2 ">
+                <img src="src/images/search.svg" />
+                <input type="search" name="search" id="search" placeholder="Cari">
             </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- hero -->
+    <section id="hero" class="bg hero d-flex justify-content-center align-items-center flex-column">
+        <div class="d-flex flex-column justify-content-center align-items-center container">
+            <img src="src/images/triangle.svg" alt="triangle" />
+            <div class="d-flex justify-center align-items-center gap-3 mt-3">
+                <p class="text-yellow">-INDONESIAN CULTURE-</p>
+            </div>
+            <h1 class="text-white fw-bold text-xxl text-center font-paytone">MENYELAMI WARISAN BUDAYA <span class="text-yellow font-paytone">WAYANG KULIT</span></h1>
+            <p class="text-white fs-4">Terbenam Dalam <span class="underline">Mitos</span> Dan <span class="underline">Magis</span></p>
+        </div>
     </section>
+    <!-- end hero -->
+    <!-- introduction -->
+    <section class="gradient-to-t py-16" id="introduction">
+        <div class="d-flex container justify-content-between align-items-center">
+            <div class="w-3-6 mr-3">
+                <img src="src/images/intro.svg" alt="introduction" class="w-full">
+            </div>
+            <div class="w-5-6">
+                <div class="d-flex align-items-center gap-2">
+                    <p class="text-yellow">-WAYANG KULIT JAWA-</p>
+                </div>
+                <h1 class="text-white">Seni Yang Dibalut Dengan Misteri</h1>
+                <p class="text-white">Wayang Kulit Jawa adalah seni tradisional Indonesia yang menggunakan boneka kulit bertekstur yang ditenagai oleh pemain di belakang layar. Ini menceritakan kisah epik dari mitologi Hindu dan cerita lokal Jawa, diiringi oleh musik gamelan, dan mengandung pesan moral dan filosofis yang melestarikan budaya dan tradisi Jawa.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end introduction -->
+    <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="src/js/main.js"></script>
 </body>
