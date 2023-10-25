@@ -181,7 +181,26 @@ li {
   .menu-list {
     display: flex;
   }
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+    .menu-footer {
+    display: flex;
+  }
+  .sectionya {
+    border-bottom: 1px solid gray;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .icon-footer {
+    width: 2rem;
+  }
 @media (max-width: 767px) {
+  .menu-footer {
+    flex-direction: column;
+  }
   .menu-list {
     display: none;
   }
